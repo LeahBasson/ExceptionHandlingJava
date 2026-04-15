@@ -181,13 +181,13 @@ public class GUI extends JFrame implements ActionListener {
 
         // doing it this way so that the text doesnt immediately clear after
         if (e.getSource() == mniClear) {
-                if (txtNum1.getText().equals("") && txtNum2.getText().equals("")){
-                    JOptionPane.showMessageDialog(null, "No values to clear");
-                }
-                txtNum1.setText("");
-                txtNum2.setText("");
-                txtResult.setText("");
-                
+            if (txtNum1.getText().equals("") && txtNum2.getText().equals("")) {
+                JOptionPane.showMessageDialog(null, "No values to clear");
+            }
+            txtNum1.setText("");
+            txtNum2.setText("");
+            txtResult.setText("");
+
         }
 
         if (e.getSource() == mniExit) {
